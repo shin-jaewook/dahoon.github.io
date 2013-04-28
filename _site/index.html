@@ -14,31 +14,37 @@
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/prettify.css">
   <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/prettify.js"></script>
 </head>
 
-<body>
+<body onload="prettyPrint()">
 
 <div id="site">
   <header>
-  <h1>Programming Archive</h1>
+  <h1><a href="/">Code Archive</a></h1>
   <div class="site-tagline">Dahoon's Programming Blog</div>
   <div class="site-description">Let's Groove!</div>
   
   <div id="navBlock" role="navigation">
     <nav class="main-nav">
       <ul>
-        <li class="active-link">
+        <li class="nav-home">
             <a href="/">Home</a>
         </li>
-        <li>
+        <li class="nav-about">
+          <a href="/about">About</a>
+        </li>
+        <li class="nav-archive">
             <a href="/archive">Archive</a>
         </li>
         <li>
           <a href="mailto:hoonjd@gmail.com">Contact</a>
-        </li>
-        <li>
-          <a href="http:///dahoon.me">Dahoon.me</a>
         </li>
       </ul>
     </nav>
@@ -49,8 +55,30 @@
   <section id="content">
 
   <article>
+    <div class="post-title"><a href="/2013/04/28/Github-Pages-and-jekyll.html">Github pages and jekyll</a></div>
+    <div class="post-meta">
+      <div class="post-date">28 April 2013</div>
+      
+        <span class="post-tag"><a class="tag_list_link" href="/tag/Github">Github&nbsp;</a></span>
+      
+        <span class="post-tag"><a class="tag_list_link" href="/tag/jekyll">jekyll&nbsp;</a></span>
+      
+        <span class="post-tag"><a class="tag_list_link" href="/tag/ruby">ruby&nbsp;</a></span>
+      
+    </div>
+    <p>jekyll을 이용해서 Github에 블로그를 만들었다. <pre class='prettyprint linenums languague-javascript'>
+function(){
+  echo "test"
+}
+</pre></p>
+  </article>
+
+  <article>
     <div class="post-title"><a href="/2013/03/15/test5copy2.html">Consectetur elit</a></div>
-    <div class="post-date">15 March 2013</div>
+    <div class="post-meta">
+      <div class="post-date">15 March 2013</div>
+      
+    </div>
     <p>Sed id lacus eu urna ullamcorper mattis. Etiam ut nunc erat. Sed et velit a\ c nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus \ suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifen\ d blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Cu\ rabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sa\ pien in turpis consequat pharetra sit amet quis elit.</p>
 
 <h2 id='nam_vel_justo_ut_nisl_rutrum_lobortis'>Nam vel justo ut nisl rutrum lobortis</h2>
@@ -60,7 +88,10 @@
 
   <article>
     <div class="post-title"><a href="/2013/03/14/test5copy.html">Consectetur elit</a></div>
-    <div class="post-date">14 March 2013</div>
+    <div class="post-meta">
+      <div class="post-date">14 March 2013</div>
+      
+    </div>
     <p>Sed id lacus eu urna ullamcorper mattis. Etiam ut nunc erat. Sed et velit a\ c nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus \ suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifen\ d blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Cu\ rabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sa\ pien in turpis consequat pharetra sit amet quis elit.</p>
 
 <h2 id='nam_vel_justo_ut_nisl_rutrum_lobortis'>Nam vel justo ut nisl rutrum lobortis</h2>
@@ -70,7 +101,10 @@
 
   <article>
     <div class="post-title"><a href="/2013/03/12/test4.html">Consectetur elit</a></div>
-    <div class="post-date">12 March 2013</div>
+    <div class="post-meta">
+      <div class="post-date">12 March 2013</div>
+      
+    </div>
     <p>Sed id lacus eu urna ullamcorper mattis. Etiam ut nunc erat. Sed et velit a\ c nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus \ suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifen\ d blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Cu\ rabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sa\ pien in turpis consequat pharetra sit amet quis elit.</p>
 
 <h2 id='nam_vel_justo_ut_nisl_rutrum_lobortis'>Nam vel justo ut nisl rutrum lobortis</h2>
@@ -80,17 +114,10 @@
 
   <article>
     <div class="post-title"><a href="/2013/03/11/test3.html">Consectetur elit</a></div>
-    <div class="post-date">11 March 2013</div>
-    <p>Sed id lacus eu urna ullamcorper mattis. Etiam ut nunc erat. Sed et velit a\ c nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus \ suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifen\ d blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Cu\ rabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sa\ pien in turpis consequat pharetra sit amet quis elit.</p>
-
-<h2 id='nam_vel_justo_ut_nisl_rutrum_lobortis'>Nam vel justo ut nisl rutrum lobortis</h2>
-
-<p>Donec at arcu nisi, quis euismod enim. Donec viverra felis vitae elit ornar\ e porta. Vivamus ullamcorper consectetur odio, vitae imperdiet mi laoreet v\ itae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.</p>
-  </article>
-
-  <article>
-    <div class="post-title"><a href="/2013/03/10/test2.html">Consectetur elit</a></div>
-    <div class="post-date">10 March 2013</div>
+    <div class="post-meta">
+      <div class="post-date">11 March 2013</div>
+      
+    </div>
     <p>Sed id lacus eu urna ullamcorper mattis. Etiam ut nunc erat. Sed et velit a\ c nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus \ suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifen\ d blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Cu\ rabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sa\ pien in turpis consequat pharetra sit amet quis elit.</p>
 
 <h2 id='nam_vel_justo_ut_nisl_rutrum_lobortis'>Nam vel justo ut nisl rutrum lobortis</h2>
@@ -101,35 +128,36 @@
 </div>
 
 
+<div class="pagination">
+  <ul>
+    
+    <li><span class="disabled">Prev</span></li>
+    
+    
+    <li><span class="active">1</span></li>
+    
+    
+      
+      <li><a href="/page2">2</a></li>
+      
+    
+    
+    <li><a href="/page2">Next</a></li>
+    
+  </ul>
+</div>
 
-    <div class="pagination">
-      <ul>
-        
-        <li><span class="disabled">Prev</span></li>
-        
-        
-        <li><span class="active">1</span></li>
-        
-        
-          
-          <li><a href="/page2">2</a></li>
-          
-        
-        
-        <li><a href="/page2">Next</a></li>
-        
-      </ul>
-    </div>
+<script>
+  $(document).ready(function() {
+    $(".nav-home").addClass("active-link");
+  });
+</script>
   </div>
 
       <footer>
       © 2013 Jung Dahoon. 
     </footer>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="/js/plugins.js"></script>
-    <script src="/js/main.js"></script>
 </div>
 
 </body>

@@ -97,9 +97,14 @@ body {
     color: #555555;
 }
 
-#site-identity {
-    border-top: 4px solid #560F56;
+a {
+  color: #560F56;
 }
+
+a:hover {
+  color: #890F89;
+}
+
 #site {
     margin: 0 auto;
     max-width: 1280px;
@@ -112,7 +117,8 @@ header {
     text-align: center;
     width: 100%;
 }
-header h1 {
+header h1, header h1 a {
+    color: #555555;
     display: block;
     font-family: Cabin,Helvetica,Arial,sans-serif;
     font-size: 40px;
@@ -122,10 +128,9 @@ header h1 {
     line-height: 1.4em;
     margin: 0 auto 24px;
     text-align: center;
+    text-decoration: none;
 }
-header h1 a {
-    color: #121212;
-}
+
 header .site-tagline {
     margin-left: auto;
     margin-right: auto;
@@ -216,12 +221,18 @@ nav a:hover {
     color: #890F89;
 }
 
-.post-date {
+.post-meta {
   color: #999999;
   font-size: 13px;
   margin: 15px;
   text-align: right;
 }
+
+.post-meta a {
+  color: #999999;
+  text-decoration: none;
+}
+
 
 #content article {
     font-size: 15px;
@@ -247,20 +258,28 @@ footer {
 }
 
 .archive-title {
-    margin: 0;
+  margin: 0;
 } 
 
 .archive-title a{
-    font-size: 18px;
-    line-height: 25px;
-    text-decoration: none;
-    color: #666666;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #666666;
 }
 
 .archive-meta {
-    font-size: 11px;
-    color: #888888;    
-    margin-bottom: 15px;
+  margin-left: 5px;
+  font-size: 11px;
+  color: #888888;    
+  margin-bottom: 15px;
+}
+
+.archive-meta a {
+  font-size: 12px;
+  color: #666666;
+  text-decoration: none;
+  margin-right: 3px;
 }
 
 
@@ -286,6 +305,15 @@ footer {
 }
 
 
+.pages-title {
+  font-size: 20px;
+  margin: 0 0 0 5px; 
+}
+
+
+.tags-list a {
+
+}
 
 
 
@@ -520,4 +548,10 @@ footer {
     h3 {
         page-break-after: avoid;
     }
+}
+
+
+.gist {
+    font-size: 12px;
+    line-height: 20px;
 }

@@ -14,31 +14,37 @@
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/prettify.css">
   <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/prettify.js"></script>
 </head>
 
-<body>
+<body onload="prettyPrint()">
 
 <div id="site">
   <header>
-  <h1>Programming Archive</h1>
+  <h1><a href="/">Code Archive</a></h1>
   <div class="site-tagline">Dahoon's Programming Blog</div>
   <div class="site-description">Let's Groove!</div>
   
   <div id="navBlock" role="navigation">
     <nav class="main-nav">
       <ul>
-        <li class="active-link">
+        <li class="nav-home">
             <a href="/">Home</a>
         </li>
-        <li>
+        <li class="nav-about">
+          <a href="/about">About</a>
+        </li>
+        <li class="nav-archive">
             <a href="/archive">Archive</a>
         </li>
         <li>
           <a href="mailto:hoonjd@gmail.com">Contact</a>
-        </li>
-        <li>
-          <a href="http:///dahoon.me">Dahoon.me</a>
         </li>
       </ul>
     </nav>
@@ -49,8 +55,13 @@
   <section id="content">
 
   <article>
-    <div class="post-title"><a href="/2013/03/09/test.html">Consectetur elit</a></div>
-    <div class="post-date">09 March 2013</div>
+    <div class="post-title"><a href="/2013/03/10/test2.html">Consectetur elit</a></div>
+    <div class="post-meta">
+      <div class="post-date">10 March 2013</div>
+      
+        <span class="post-tag"><a class="tag_list_link" href="/tag/jekyll">jekyll&nbsp;</a></span>
+      
+    </div>
     <p>Sed id lacus eu urna ullamcorper mattis. Etiam ut nunc erat. Sed et velit a\ c nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus \ suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifen\ d blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Cu\ rabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sa\ pien in turpis consequat pharetra sit amet quis elit.</p>
 
 <h2 id='nam_vel_justo_ut_nisl_rutrum_lobortis'>Nam vel justo ut nisl rutrum lobortis</h2>
@@ -59,49 +70,79 @@
   </article>
 
   <article>
-    <div class="post-title"><a href="/2013/03/08/best-spring-recipies.html">Lorem ipsum dolor sit amet</a></div>
-    <div class="post-date">08 March 2013</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elemen\ tum leo non felis porttitor vulputate. Nulla ipsum quam, auctor ut hendreri\ t quis, tincidunt eu metus. Quisque ipsum tellus, semper a tempus quis, int\ erdum vel magna. Cras a nisl diam, in accumsan augue. Pellentesque varius n\ ibh eu diam tempor rhoncus.</p>
+    <div class="post-title"><a href="/2013/03/09/test.html">Tag test</a></div>
+    <div class="post-meta">
+      <div class="post-date">09 March 2013</div>
+      
+        <span class="post-tag"><a class="tag_list_link" href="/tag/jekyll">jekyll&nbsp;</a></span>
+      
+        <span class="post-tag"><a class="tag_list_link" href="/tag/code">code&nbsp;</a></span>
+      
+    </div>
+    <p>Sed id lacus eu urna ullamcorper mattis. Etiam ut nunc erat. Sed et velit a\ c nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus \ suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifen\ d blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Cu\ rabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sa\ pien in turpis consequat pharetra sit amet quis elit.</p>
 
-<h2 id='pellentesque_sollicitudin'>Pellentesque sollicitudin</h2>
+<h2 id='nam_vel_justo_ut_nisl_rutrum_lobortis'>Nam vel justo ut nisl rutrum lobortis</h2>
 
-<p>Erat pellentesque ornare gravida, ipsum est luctus neque, eget condimentum \ urna arcu sit amet felis. Duis nisl augue, scelerisque quis iaculis non, co\ mmodo a tellus. Class aptent taciti sociosqu ad litora torquent per conubia\ nostra, per inceptos himenaeos. Etiam tincidunt porttitor nibh at semper.</p>
+<p>Donec at arcu nisi, quis euismod enim. Donec viverra felis vitae elit ornar\ e porta. Vivamus ullamcorper consectetur odio, vitae imperdiet mi laoreet v\ itae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.</p>
+  </article>
+
+  <article>
+    <div class="post-title"><a href="/2013/03/08/best-spring-recipies.html">Github pages and jekyll</a></div>
+    <div class="post-meta">
+      <div class="post-date">08 March 2013</div>
+      
+        <span class="post-tag"><a class="tag_list_link" href="/tag/Github">Github&nbsp;</a></span>
+      
+        <span class="post-tag"><a class="tag_list_link" href="/tag/jekyll">jekyll&nbsp;</a></span>
+      
+        <span class="post-tag"><a class="tag_list_link" href="/tag/ruby">ruby&nbsp;</a></span>
+      
+    </div>
+    <p>jekyll을 이용해서 Github에 블로그를 만들었다. <pre class='prettyprint linenums:4'>
+foo();
+bar();
+baz();
+boo();
+far();
+faz();
+</pre></p>
   </article>
 
 </div>
 
 
+<div class="pagination">
+  <ul>
+    
+      
+      <li><a href="/">Prev</a></li>
+      
+    
+    
+    <li><a href="/">1</a></li>
+    
+    
+      
+      <li><span class="active">2</span></li>
+      
+    
+    
+    <li><span class="disabled">Next</span></li>
+    
+  </ul>
+</div>
 
-    <div class="pagination">
-      <ul>
-        
-          
-          <li><a href="/">Prev</a></li>
-          
-        
-        
-        <li><a href="/">1</a></li>
-        
-        
-          
-          <li><span class="active">2</span></li>
-          
-        
-        
-        <li><span class="disabled">Next</span></li>
-        
-      </ul>
-    </div>
+<script>
+  $(document).ready(function() {
+    $(".nav-home").addClass("active-link");
+  });
+</script>
   </div>
 
       <footer>
       © 2013 Jung Dahoon. 
     </footer>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="/js/plugins.js"></script>
-    <script src="/js/main.js"></script>
 </div>
 
 </body>

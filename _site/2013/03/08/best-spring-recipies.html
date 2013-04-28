@@ -14,31 +14,37 @@
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/prettify.css">
   <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/prettify.js"></script>
 </head>
 
-<body>
+<body onload="prettyPrint()">
 
 <div id="site">
   <header>
-  <h1>Programming Archive</h1>
+  <h1><a href="/">Code Archive</a></h1>
   <div class="site-tagline">Dahoon's Programming Blog</div>
   <div class="site-description">Let's Groove!</div>
   
   <div id="navBlock" role="navigation">
     <nav class="main-nav">
       <ul>
-        <li class="active-link">
+        <li class="nav-home">
             <a href="/">Home</a>
         </li>
-        <li>
+        <li class="nav-about">
+          <a href="/about">About</a>
+        </li>
+        <li class="nav-archive">
             <a href="/archive">Archive</a>
         </li>
         <li>
           <a href="mailto:hoonjd@gmail.com">Contact</a>
-        </li>
-        <li>
-          <a href="http:///dahoon.me">Dahoon.me</a>
         </li>
       </ul>
     </nav>
@@ -46,21 +52,20 @@
 </header>
 
   <div id="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elemen\ tum leo non felis porttitor vulputate. Nulla ipsum quam, auctor ut hendreri\ t quis, tincidunt eu metus. Quisque ipsum tellus, semper a tempus quis, int\ erdum vel magna. Cras a nisl diam, in accumsan augue. Pellentesque varius n\ ibh eu diam tempor rhoncus.</p>
-
-<h2 id='pellentesque_sollicitudin'>Pellentesque sollicitudin</h2>
-
-<p>Erat pellentesque ornare gravida, ipsum est luctus neque, eget condimentum \ urna arcu sit amet felis. Duis nisl augue, scelerisque quis iaculis non, co\ mmodo a tellus. Class aptent taciti sociosqu ad litora torquent per conubia\ nostra, per inceptos himenaeos. Etiam tincidunt porttitor nibh at semper.</p>
+  <p>jekyll을 이용해서 Github에 블로그를 만들었다. <pre class='prettyprint linenums:4'>
+foo();
+bar();
+baz();
+boo();
+far();
+faz();
+</pre></p>
   </div>
 
       <footer>
       © 2013 Jung Dahoon. 
     </footer>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="/js/plugins.js"></script>
-    <script src="/js/main.js"></script>
 </div>
 
 </body>
