@@ -1,6 +1,6 @@
 ---
 title: Github Pages and jekyll
-layout: default
+layout: post
 tags:
 - Github
 - jekyll
